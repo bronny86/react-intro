@@ -1,3 +1,8 @@
+// var Tooltip = require("rc-tooltip"); //CommonJS
+// import Tooltip from "rc-tooltip"; // Modern JavaScript import export syntax
+
+import { Copyblock } from "react-code-blocks";
+
 let favouriteFruits = [
 
     "papaya",
@@ -12,13 +17,24 @@ let favouriteFruits = [
 
 ];
 
+let exampleJavaScriptCode = `
+
+console.log("Hello world!");
+
+let someNumber = 1;
+
+console.log("Some number is: " + 1);
+
+`;
+
 export function FruitList(){
 
     return(
 
         <div className="fruitList">
 
-            <h1>Favourite Fruits:</h1>
+            
+                <h1>Favourite Fruits:</h1>
 
             <ul>
 
